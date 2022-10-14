@@ -30,7 +30,7 @@ fn main() {
 
 ['/']
 pub fn (mut app App) index() vweb.Result {
-	node := app.req.header.get_custom('x-hop-edge-node') or { 'local' }
+	node := app.req.header.get_custom('Hop-Edge-Node') or { 'local' }
 
 	return app.text(content.replace('{{hop-edge-node}}', node))
 }
