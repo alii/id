@@ -23,15 +23,17 @@ struct App {
 fn main() {
 	vweb.run_at(&App{}, vweb.RunParams{
 		port: 8080
-	}) or {
-		panic(err)
-	}
+	}) or { panic(err) }
 }
 
+['/']
 pub fn (mut app App) index() vweb.Result {
 	node := app.req.header.get_custom('x-hop-edge-node') or { 'local' }
 
-	println(node)
-
 	return app.text(content.replace('{{hop-edge-node}}', node))
+}
+
+['/headers']
+pub fn (mut app App) print_headers() vweb.Result {
+	return app.json(app.req.header)
 }
