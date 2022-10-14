@@ -24,6 +24,8 @@ fn main() {
 	vweb.run_at(&App{}, vweb.RunParams{
 		port: 8080
 	}) or { panic(err) }
+
+	println('listening on port 8080')
 }
 
 ['/']
