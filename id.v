@@ -11,7 +11,7 @@ const content = '|   __    __
 |
 |  alistair#9999 268798547439255572
 |  hi@alistair.sh
-|  https://twitter.com/alistaiiiir
+|  https://twitter.com/alistaiir
 |  https://alistair.sh
 |  served by {{hop-edge-node}}@hop.io
 '
