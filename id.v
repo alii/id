@@ -9,7 +9,7 @@ const content = '|   __    __
 |
 |  software engineer
 |
-|  alistair#9999 268798547439255572
+|  discord @alistaiir <@268798547439255572>
 |  hi@alistair.sh
 |  https://twitter.com/alistaiir
 |  https://alistair.sh
